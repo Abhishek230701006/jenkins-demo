@@ -1,0 +1,21 @@
+name: Simple CI Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start
+        run: echo "Hello from CI/CD!"
+
+      - name: Build
+        run: echo "Build completed successfully!"
+
+      - name: Test
+        run: echo "All tests passed!"
+
+      - name: Finish
+        run: echo "Pipeline execution completed!"
